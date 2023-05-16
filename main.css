@@ -1,0 +1,72 @@
+.down{
+    position: relative;
+    display:inline-block;
+}
+
+.down-content{
+    position: absolute;
+    display: none;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 1px;
+    border: rgb(231, 231, 231) 1px solid;
+    width: 150px;
+    z-index: 1;
+}
+
+.down .down-content a{
+    color: black;
+    padding: 8px 16px;
+    display: block;
+    text-align: left;
+    font-size: 13px;
+}
+
+.down .down-content a:hover{
+    background-color:rgb(248, 254, 255);
+}
+
+.down:hover .down-content{
+    display: block;
+}
+
+.body_content table{
+    width: 85%;
+    margin:0px auto;
+}
+
+.content{
+    height: 100%;
+    width: 95%;
+    padding: 0px;
+    margin:5px auto;
+    border-radius: 5px;
+    background-color: white;
+    opacity:0.9;
+    position: relative;
+    bottom: 0px;
+    border: 1px rgb(216, 216, 216) solid;
+}
+
+.content:hover{
+    box-shadow:rgb(37, 37, 37) 0px  2px 5px 0px;
+    transition: 0.5s;
+    font-style:black;
+    opacity: 1;
+}
+
+.title{
+    height: 40px;
+    padding: 0px 20px;
+    border-bottom: rgb(227, 227, 227) 1px solid;
+    font-size: 20px;
+    color: rgb(62, 62, 62);
+}
+
+.substance{
+    padding: 20px 0px;
+    color: rgb(124, 118, 118);
+    font-size: 15px;
+    padding-right: 5px;
+}
+

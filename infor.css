@@ -1,0 +1,95 @@
+div{
+    box-sizing: border-box;
+}
+.Content{
+    display: flex;
+    position: relative;
+    top:100px;
+    width: 90%;
+    margin: auto;
+}
+.left{
+    border: rgb(19, 5, 172) 1px solid;
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+.left .head_img, .left .bottom_img{
+    flex: 1;
+    background-color:rgba(19, 5, 172, 0.712);
+    height: 150px;
+}
+.left .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 8;
+}
+.container img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.right{
+    display: flex;
+    flex-direction: column;
+    flex: 7;
+}
+.right .first{
+    display: flex;
+    flex: 1; 
+    font-size:  25px;
+    color: rgb(6, 31, 123);
+    margin-left: 50px;
+    border-bottom: solid 2px rgba(17, 55, 170, 0.826);
+    align-items: flex-end;
+
+}
+.first span{
+    margin-bottom: 20px;
+}
+
+
+.right .inform{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+}
+.inform span{
+    flex: 1;
+}
+.title{
+    margin-left: 50px;
+    font-size: 18px;
+    color: rgb(12, 41, 172);
+}
+.com{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    padding-left: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.Content>div {
+    background-origin: border-box;
+    background-size: 100% 100%;
+    background-position: center;
+    box-sizing: border-box;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    transition: 1s;
+}
+
