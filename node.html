@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>学习笔记</title>
+  <link rel="stylesheet" href="./node.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="back">
+    <div class="header">
+        <div style="position: relative;left: 0;">
+        <a href="#"><h1>个人简历</h1></a>
+        </div>
+    </div>
+    <div class="botton" style="position: absolute;right:5px;top:10px">
+      <div class="open" id="open"></div>
+  </div>
+</div>
+<div class="back">
+    <div class="header">
+        <div class="nav">
+        <ul>
+            <li><a href="./index.html"><span><img src="./images/基本信息.png">基本信息</span></a></li>
+            <li><a href="./infor.html"><span><img src="./images/荣誉证书.png">详细情况</span></a></li>
+            <li><a href="./node.html"><span><img src="./images/自我评价.png">学习笔记</span></a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+<div class="Axis">
+  <div class="pres-timeline" id="this-timeline">
+<div class="periods-section">
+    <div class="periods-container">
+      <section class="period-single" period="period1">
+        <h4 class="year">Day 1 and Day 2</h4>
+        <h2 class="title">赛前辅导，主要内容包括html与css基础内容</h2>
+        <br>
+        <p style="color: black;">Html作用:构建页面框架和内容</p>
+        <p style="color: black;">Css作用：装饰页面</p>
+      </section>
+      <section class="period-single" period="period2">
+        <h4 class="year">Day 3 and Day 4</h4>
+        <h2 class="title">赛前辅导，主要内容包括jq语句与js内容</h2>
+        <br>
+        <p style="color: black;">jquery内容较为生疏，老师讲解的也很详细</p>
+        <p style="color: black;">js作用：使页面动起来</p>
+      </section>
+      <section class="period-single" period="period3">
+        <h4 class="year">Day 5</h4>
+        <h2 class="title">赛前辅导，主要内容介绍比赛还有一些bootstrap的讲解</h2>
+        <br>
+        <p style="color: black;">bootstrap作用：响应布局</p>
+      </section>
+      <div class="btn-back"></div>
+      <div class="btn-next"></div>
+    </div>
+</div>
+<div class="timeline-section">
+    <div class="timeline-container">
+      <div class="timeline"></div>
+      <div class="btn-back"><svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h30v30H0z"/><path fill="#D8D8D8" fill-rule="evenodd" d="M11.828 15l7.89-7.89-2.83-2.828L6.283 14.89l.11.11-.11.11L16.89 25.72l2.828-2.83"/></svg></div>
+      <div class="btn-next"><svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h30v30H0z"/><path fill="#D8D8D8" fill-rule="evenodd" d="M18.172 14.718l-7.89-7.89L13.112 4l10.606 10.607-.11.11.11.11-10.608 10.61-2.828-2.83 7.89-7.89"/></svg></div>
+    </div>
+</div>
+<div class="cards-section">
+    <div class="cards-container">
+      <section class="card-single" period="period1">
+        <h4 class="year">Day1 and Day 2</h4>
+        <h2 class="title">Html + Css</h2>
+        <div class="content">
+          <img src="./images/day2.png" alt="" />
+        </div>
+      </section>
+      <section class="card-single" period="period2">
+        <h4 class="year">Day3 and Day 4</h4>
+        <h2 class="title">jquery + Js</h2>
+        <div class="content">
+          <div class="content">
+            <img src="./images/day4.png" alt="" />
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="card-single" period="period3">
+        <h4 class="year">Day 5</h4>
+        <h2 class="title">赛事讲解 + bootstrap</h2>
+        <div class="content">
+          <img src="./images/day5.png" alt="" />
+        </div>
+      </section>
+    </div>
+</div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./script.js"></script>
+  <script src="./node.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

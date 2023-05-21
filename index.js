@@ -40,7 +40,7 @@ function Onclick(){
     Con_1.style.transform="scale(0, 0) rotate(360deg)";
     Con_2.style.transform="scale(0, 0) rotate(360deg)";
     setTimeout(function(){
-        window.location.replace("./index.html");
+        window.location.replace("./infor.html");
     }, 500); 
 }
 
@@ -49,6 +49,40 @@ function Back(){
     Con_3.style.opacity="0.5";
     Con_3.style.transition="0.8s";
     setTimeout(function(){
-        window.location.replace("./infor.html");
+        window.location.replace("./index.html");
     }, 500); 
 }
+
+
+
+//夜间模式
+var brightness;
+function cover(brightness) {
+    if (typeof(div) == 'undefined') {
+        div = document.createElement('div');
+        div.setAttribute('style', 'position:fixed;top:0;left:0;outline:5000px solid;z-index:99999;');
+        document.body.appendChild(div);
+    } else {
+        div.style.display = '';
+    }
+    div.style.outlineColor = 'rgba(0,0,0,' + brightness + ')';
+}
+var open=document.getElementById('open');
+var bott = document.querySelector('.botton');
+var body = document.getElementById('body');
+var temp = 1;
+open.addEventListener('click',function(){
+    if(temp==1){
+        this.className = 'close';
+        temp=0;
+        cover(brightness = 0.3);
+
+        bott.style. border= '2px solid  rgb(11, 243, 81)';
+    }else{
+        this.className = 'open';
+        temp=1;
+        cover(brightness = 0);
+        bott.style. border= '2px solid black';
+    }
+
+})

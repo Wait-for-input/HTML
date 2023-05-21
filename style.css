@@ -241,3 +241,44 @@ h1:hover{
     opacity: 1;
     transition: 0.5s;
 }
+
+
+.botton{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 40px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 3s;
+}
+.open{
+    position: absolute;
+    top: 1.5px;
+    left: 2px;
+    height: 13px;
+    width: 13px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    transition: all 1s;
+}
+.close{
+  
+    position: absolute;
+    top: 1.5px;
+    right: 2px;
+    height: 13px;
+    width: 13px;
+    background-color: rgb(11, 243, 81);
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+.cover{
+   position:fixed;
+   top: 0px;
+   left: 0px;
+   z-index: 99999;
+}
